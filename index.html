@@ -1,9 +1,53 @@
 <head>
-    <title>Моё портфолио</title>
+    <link rel = "icon" href="icon.png">
+    <title>Моё портфолио</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,600&family=Neucha&display=swap" rel="stylesheet">
 </head>
 <style>
+    h1 {
+        color:#001E6C;
+        font-size: 5.625rem;
+        margin: 50px auto 0 auto;
+    }
+    h2 {
+        color:#310A5D;
+        font-size:2.5rem;
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
     body {
-        background-color: #28ABB9;
+        background-color: #A8DDA8;
+        color: #041C32;
+        margin: 0;
+        text-align: center;
+        font-family: "Merriweather",serif;
+    }
+    .top-container {
+        font-family: 'Neucha', cursive;
+        background-color:#2D31FA;
+        position: relative;
+        padding-top:100px;
+
+    }
+    .top-cloud {
+        position: absolute;
+        right: 300px;
+        top:40px
+    }
+    .bottom-cloud {
+        position: absolute;
+        left:250px;
+        bottom: 300px;
+
+    }
+    .pro {
+        text-decoration: underline;
+        color: #FFD717;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding-bottom: 10px;
     }
     table {
         border-style:solid;
@@ -19,21 +63,19 @@
         background-color: #A8DDA8;
     }
 </style>
-
 <body>
-    <table>
-        <tr>
-            <td><img src="Face.jpg" height="300"></td>
-            <td>
-                <h2>Никита Куликов</h2>
-                <p>Хотел быть инженером, скачал Fusion360,передумал </p>
-            </td>
-        </tr>
-    </table>
-    <hr>
+    <div class = "top-container">
+        <img class = "bottom-cloud" src = "cloud.png">
+        <img class="top-cloud" src = "cloud.png">
+        <div class ="title-text">
+        <h1>Никита Куликов</h1>
+        <h2>я <span class = "pro"><a href = "https://stepik.org/lesson/302627/step/2?unit=284520">веб-программист</a></span></h2>
+        </div>
+    <img class = "mountain" src = "mountain.png">
+    </div>
     <h4>Планы на лето:</h4>
     <ol>
-        <li>Отдыхать</li>
+        <li>Отдых</li>
         <li>ОГЭ</li>
         <li>Робототехника</li>
     </ol>
